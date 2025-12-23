@@ -96,7 +96,11 @@ p01          up   infinite      1  alloc cnode3-005
 caijingnina-gmai-11e66a@TRDC01:~$ srun -N 1 -p NTU_Shared --gres=gpu:1 --pty /bin/bash
 srun: error: invalid partition specified: NTU_Shared
 srun: error: Unable to allocate resources: Invalid partition name specified
-caijingnina-gmai-11e66a@TRDC01:~$
+caijingnina-gmai-11e66a@TRDC01:~$ ^C
+caijingnina-gmai-11e66a@TRDC01:~$ srun -N 1 -p p01 --gres=gpu:1 --pty /bin/bash
+srun: job 156 queued and waiting for resources
+
+
 ```
 
 

@@ -1,4 +1,4 @@
-
+```bash
 USER@DESKTOP-QF7UBMR MINGW64 /
 $ ssh -i ~/.ssh/id_ed25519 -p 2222 \
 -o "ProxyCommand=ssh -i ~/.ssh/id_ed25519 -W %h:%p -p 2222 caijingnina-gmai-11e66a@jb1.frontier.nvidia.com" \
@@ -48,10 +48,12 @@ apt install nvidia-utils-525-server  # version 525.147.05-0ubuntu1
 apt install nvidia-utils-550-server  # version 550.163.01-0ubuntu0.24.04.1
 Ask your administrator to install one of them.
 caijingnina-gmai-11e66a@TRDC01:~$
+```
 
-
-你在唬爛我 我進去了:"""USER@DESKTOP-QF7UBMR MINGW64 / $ ssh -i ~/.ssh/id_ed25519 -p 2222 \ -o "ProxyCommand=ssh -i ~/.ssh/id_ed25519 -W %h:%p -p 2222 caijingnina-gmai-11e66a@jb1.frontier.nvidia.com" \ caijingnina-gmai-11e66a@3.tun.tp1-cluster.nvidia.com The authenticity of host '[3.tun.tp1-cluster.nvidia.com]:2222 (<no hostip for proxy command>)' can't be established. ED25519 key fingerprint is SHA256:iWkGhdL/1nLrFwLgyguxVH07Ebiqx3lSF7zfXvsl7Tk. This key is not known by any other names. Are you sure you want to continue connecting (yes/no/[fingerprint])? yes Warning: Permanently added '[3.tun.tp1-cluster.nvidia.com]:2222' (ED25519) to the list of known hosts. Creating ECDSA key for ssh caijingnina-gmai-11e66a@TRDC01:~$ """"
-
+你在唬爛我 我進去了:
+```bash
+USER@DESKTOP-QF7UBMR MINGW64 / $ ssh -i ~/.ssh/id_ed25519 -p 2222 \ -o "ProxyCommand=ssh -i ~/.ssh/id_ed25519 -W %h:%p -p 2222 caijingnina-gmai-11e66a@jb1.frontier.nvidia.com" \ caijingnina-gmai-11e66a@3.tun.tp1-cluster.nvidia.com The authenticity of host '[3.tun.tp1-cluster.nvidia.com]:2222 (<no hostip for proxy command>)' can't be established. ED25519 key fingerprint is SHA256:iWkGhdL/1nLrFwLgyguxVH07Ebiqx3lSF7zfXvsl7Tk. This key is not known by any other names. Are you sure you want to continue connecting (yes/no/[fingerprint])? yes Warning: Permanently added '[3.tun.tp1-cluster.nvidia.com]:2222' (ED25519) to the list of known hosts. Creating ECDSA key for ssh caijingnina-gmai-11e66a@TRDC01:~$ 
+```
 
 你的成功命令是：
 

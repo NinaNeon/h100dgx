@@ -100,6 +100,26 @@ caijingnina-gmai-11e66a@TRDC01:~$ ^C
 caijingnina-gmai-11e66a@TRDC01:~$ srun -N 1 -p p01 --gres=gpu:1 --pty /bin/bash
 srun: job 156 queued and waiting for resources
 
+caijingnina-gmai-11e66a@TRDC01:~$ srun -N 1 -p p01 --gres=gpu:1 --pty /bin/bash
+srun: job 156 queued and waiting for resources
+^Csrun: Force Terminated JobId=156
+srun: Job allocation 156 has been revoked
+caijingnina-gmai-11e66a@TRDC01:~$ nvidia-smi
+Command 'nvidia-smi' not found, but can be installed with:
+apt install nvidia-utils-470         # version 470.256.02-0ubuntu0.24.04.1, or
+apt install nvidia-utils-470-server  # version 470.256.02-0ubuntu0.24.04.1
+apt install nvidia-utils-535         # version 535.274.02-0ubuntu0.24.04.2
+apt install nvidia-utils-535-server  # version 535.274.02-0ubuntu0.24.04.2
+apt install nvidia-utils-570         # version 570.195.03-0ubuntu0.24.04.1
+apt install nvidia-utils-570-server  # version 570.195.03-0ubuntu0.24.04.2
+apt install nvidia-utils-580         # version 580.95.05-0ubuntu0.24.04.2
+apt install nvidia-utils-580-server  # version 580.95.05-0ubuntu0.24.04.2
+apt install nvidia-utils-565-server  # version 565.57.01-0ubuntu0.24.04.3
+apt install nvidia-utils-525         # version 525.147.05-0ubuntu1
+apt install nvidia-utils-525-server  # version 525.147.05-0ubuntu1
+apt install nvidia-utils-550-server  # version 550.163.01-0ubuntu0.24.04.1
+Ask your administrator to install one of them.
+caijingnina-gmai-11e66a@TRDC01:~$
 
 ```
 

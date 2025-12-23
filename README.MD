@@ -82,6 +82,22 @@ ip addr
 nvidia-smi
 ```
 
+```bash
+USER@DESKTOP-QF7UBMR MINGW64 /
+$ ssh -i ~/.ssh/id_ed25519 -p 2222 \
+-o "ProxyCommand=ssh -i ~/.ssh/id_ed25519 -W %h:%p -p 2222 caijingnina-gmai-11e66a@jb1.frontier.nvidia.com" \
+caijingnina-gmai-11e66a@3.tun.tp1-cluster.nvidia.com
+Last login: Tue Dec 23 15:11:29 2025 from 127.0.0.1
+caijingnina-gmai-11e66a@TRDC01:~$ module load slurm
+sinfo
+PARTITION AVAIL  TIMELIMIT  NODES  STATE NODELIST
+p01          up   infinite      4  down* cnode3-[001-004]
+p01          up   infinite      1  alloc cnode3-005
+caijingnina-gmai-11e66a@TRDC01:~$ srun -N 1 -p NTU_Shared --gres=gpu:1 --pty /bin/bash
+srun: error: invalid partition specified: NTU_Shared
+srun: error: Unable to allocate resources: Invalid partition name specified
+caijingnina-gmai-11e66a@TRDC01:~$
+```
 
 
 
